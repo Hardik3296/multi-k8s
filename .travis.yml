@@ -15,3 +15,15 @@ after-success:
     - docker push hardik3296/multi-nginx
     - docker push hardik3296/multi-server
     - docker push hardik3296/multi-worker
+# deploy:
+#     provider: elasticbeanstalk
+#     region: us-west-1
+#     app: multi-docker
+#     env: MultiDocker-env
+#     # The name of the amazon S3 bucket
+#     bucket_name: some-name 
+#     bucket_path: docker-multi
+#     on:
+#         branch: master
+#         access_key_id: $AWS_ACCESS_KEY
+#         secret_access_key: $AWS_SECRET_KEY
